@@ -1,0 +1,1202 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* donation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_partner__donation_count
+#: model:ir.model.fields,field_description:donation.field_res_users__donation_count
+msgid "# of Donations"
+msgstr "Bağış sayısı"
+
+#. module: donation
+#: model:ir.actions.report,print_report_name:donation.report_thanks
+msgid ""
+"'donation_thanks-%s%s' % (object.number, object.state == 'draft' and "
+"'-draft' or '')"
+msgstr ""
+"'bagis_tesekkur-%s%s' % (object.number, object.state == 'draft' and "
+"'-taslak' or '')"
+
+#. module: donation
+#: model:ir.model.constraint,message:donation.constraint_donation_campaign_code_company_uniq
+msgid "A campaign with the same code already exists!"
+msgstr "Aynı koda sahip bir kampanya zaten var!"
+
+#. module: donation
+#: model:ir.model.constraint,message:donation.constraint_donation_donation_bank_statement_line_uniq
+msgid "A donation already exists for this bank statement line."
+msgstr "Bu banka hesap özeti satırı için zaten bir bağış var."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_needaction
+msgid "Action Needed"
+msgstr "Eylem gerekli"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__active
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__active
+msgid "Active"
+msgstr "Etkin"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_ids
+msgid "Activities"
+msgstr "Aktiviteler"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Aktivite istisna işareti"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_state
+msgid "Activity State"
+msgstr "Aktivite durumu"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Aktivite türü simgesi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__amount
+#: model:ir.model.fields,field_description:donation.field_donation_report__amount_company_currency
+msgid "Amount"
+msgstr "Tutar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__amount_total
+msgid "Amount Total"
+msgstr "Toplam tutar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__amount_total_company_currency
+msgid "Amount Total in Company Currency"
+msgstr "Firma para biriminde toplam tutar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__amount_company_currency
+msgid "Amount in Company Currency"
+msgstr "Firma para biriminde tutar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "Analitik dağılım"
+
+#. module: donation
+#: model:ir.model,name:donation.model_account_analytic_applicability
+msgid "Analytic Plan's Applicabilities"
+msgstr "Analitik plan uygulanabilirlikleri"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__analytic_precision
+msgid "Analytic Precision"
+msgstr "Analitik hassasiyet"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__tax_receipt_option__annual
+#: model:ir.model.fields.selection,name:donation.selection__donation_tax_receipt_option_switch__new_tax_receipt_option__annual
+msgid "Annual Tax Receipt"
+msgstr "Yıllık toplu makbuz"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_campaign_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_campaign_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_thanks_template_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_thanks_template_search
+msgid "Archived"
+msgstr "Arşivlendi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_attachment_count
+msgid "Attachment Count"
+msgstr "Ek sayısı"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Back to Draft"
+msgstr "Taslağa geri al"
+
+#. module: donation
+#: model:ir.model,name:donation.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Banka hesap özeti satırı"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Campaign"
+msgstr "Kampanya"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_tax_receipt_option_switch_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_validate_form
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__state__cancel
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Cancelled"
+msgstr "İptal edildi"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"Cancelled donation '%s' is linked to a journal entry. This should never "
+"happen."
+msgstr "İptal edilen bağış '%s' bir yevmiye kaydına bağlı. Bu hiç olmamalı."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"Cancelled donation '%s' is linked to a tax receipt. This should never "
+"happen."
+msgstr "İptal edilen bağış '%s' bir bağış makbuzuna bağlı. Bu hiç olmamalı."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Cannot validate donation %s because it doesn't have any lines!"
+msgstr "%s bağışı onaylanamıyor, çünkü hiç satırı yok!"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Cannot validate donation %s because it is not in draft state."
+msgstr "%s bağışı onaylanamıyor, çünkü taslak durumunda değil."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Cannot validate donation %s because the total amount is 0!"
+msgstr "%s bağışı onaylanamıyor, çünkü toplam tutar 0!"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_report__product_categ_id
+msgid "Category of Product"
+msgstr "Ürün kategorisi"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Change"
+msgstr "Değiştir"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_tax_receipt_option_switch_action
+#: model_terms:ir.ui.view,arch_db:donation.donation_tax_receipt_option_switch_form
+msgid "Change Tax Receipt Option"
+msgstr "Makbuz seçeneğini değiştir"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__check_total
+msgid "Check Amount"
+msgstr "Kontrol tutarı"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.res_config_settings_donation
+msgid "Check Total"
+msgstr "Toplamı kontrol et"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_config_settings__group_donation_check_total
+msgid "Check Total on Donations"
+msgstr "Bağışlarda toplamı kontrol et"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__code
+msgid "Code"
+msgstr "Kod"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_campaign
+msgid "Code attributed for a Donation Campaign"
+msgstr "Bağış kampanyasına verilen kod"
+
+#. module: donation
+#: model:ir.model,name:donation.model_res_company
+msgid "Companies"
+msgstr "Firmalar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__company_id
+#: model:ir.model.fields,field_description:donation.field_donation_donation__company_id
+#: model:ir.model.fields,field_description:donation.field_donation_line__company_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__company_id
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__company_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_campaign_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Company"
+msgstr "Firma"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__company_currency_id
+#: model:ir.model.fields,field_description:donation.field_donation_line__company_currency_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__company_currency_id
+msgid "Company Currency"
+msgstr "Firma para birimi"
+
+#. module: donation
+#: model:ir.model,name:donation.model_res_config_settings
+msgid "Config Settings"
+msgstr "Yapılandırma ayarları"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donation_config_menu
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: donation
+#: model:ir.model,name:donation.model_res_partner
+msgid "Contact"
+msgstr "Kişi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__country_id
+msgid "Country"
+msgstr "Ülke"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.tax_receipt_annual_create_menu
+msgid "Create Annual Receipts"
+msgstr "Yıllık toplu makbuzları oluştur"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid "Create Donation from Bank Statement Line"
+msgstr "Banka hesap özeti satırından bağış oluştur"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__create_uid
+#: model:ir.model.fields,field_description:donation.field_donation_donation__create_uid
+#: model:ir.model.fields,field_description:donation.field_donation_line__create_uid
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__create_uid
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__create_uid
+#: model:ir.model.fields,field_description:donation.field_donation_validate__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__create_date
+#: model:ir.model.fields,field_description:donation.field_donation_donation__create_date
+#: model:ir.model.fields,field_description:donation.field_donation_line__create_date
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__create_date
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__create_date
+#: model:ir.model.fields,field_description:donation.field_donation_validate__create_date
+msgid "Created on"
+msgstr "Oluşturulma tarihi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__currency_id
+#: model:ir.model.fields,field_description:donation.field_donation_line__currency_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Currency"
+msgstr "Para birimi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_users__context_donation_campaign_id
+msgid "Current Donation Campaign"
+msgstr "Güncel bağış kampanyası"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_users__context_donation_payment_method_line_id
+msgid "Current Donation Payment Method"
+msgstr "Güncel bağış ödeme yöntemi"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Date"
+msgstr "Tarih"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_account_analytic_applicability__display_name
+#: model:ir.model.fields,field_description:donation.field_account_bank_statement_line__display_name
+#: model:ir.model.fields,field_description:donation.field_account_payment_method_line__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_donation__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_line__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_report__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__display_name
+#: model:ir.model.fields,field_description:donation.field_donation_validate__display_name
+#: model:ir.model.fields,field_description:donation.field_res_company__display_name
+#: model:ir.model.fields,field_description:donation.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:donation.field_res_partner__display_name
+#: model:ir.model.fields,field_description:donation.field_res_users__display_name
+msgid "Display Name"
+msgstr "Görünen ad"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr "Dağılımdaki analitik hesap"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_account_analytic_applicability__business_domain
+msgid "Domain"
+msgstr "Uygulama alanı"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_donation
+#: model:ir.model.fields,field_description:donation.field_account_payment_method_line__donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__donation_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__product_donation_type
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__donation_id
+#: model:ir.model.fields.selection,name:donation.selection__account_analytic_applicability__business_domain__donation
+#: model:ir.module.category,name:donation.module_category_donation
+#: model:ir.ui.menu,name:donation.donation_top_menu
+#: model_terms:ir.ui.view,arch_db:donation.res_config_settings_donation
+msgid "Donation"
+msgstr "Bağış"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"Donation %(donation)s is linked to a bank statement line, but the Donation "
+"by Credit Transfer Account is not set for company '%(company)s'. This should"
+" never happen."
+msgstr ""
+"%(donation)s bağışı bir banka hesap özeti satırına bağlı, ancak "
+"'%(company)s' firmasında havale bağışları hesabı ayarlanmamış. Bu hiç "
+"olmamalı."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"Donation '%(donation)s' is linked to the tax receipt %(tax_receipt)s, so you"
+" cannot delete it."
+msgstr ""
+"'%(donation)s' bağışı %(tax_receipt)s bağış makbuzuna bağlı, bu yüzden "
+"silinemez."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Donation '%s' is in Done state, so you cannot delete it."
+msgstr "'%s' bağışı tamamlandı durumunda, bu yüzden silinemez."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Donation '%s' is linked to a journal entry, so you cannot delete it."
+msgstr "'%s' bağışı bir yevmiye kaydına bağlı, bu yüzden silinemez."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__campaign_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__campaign_id
+msgid "Donation Campaign"
+msgstr "Bağış kampanyası"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_campaign_action
+#: model:ir.ui.menu,name:donation.donation_campaign_menu
+msgid "Donation Campaigns"
+msgstr "Bağış kampanyaları"
+
+#. module: donation
+#: model:res.groups,name:donation.group_donation_check_total
+msgid "Donation Check Total"
+msgstr "Bağış toplam kontrolü"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__donation_date
+#: model:ir.model.fields,field_description:donation.field_donation_report__donation_date
+msgid "Donation Date"
+msgstr "Bağış tarihi"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_line
+#: model:ir.model.fields,field_description:donation.field_donation_donation__line_ids
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Donation Lines"
+msgstr "Bağış satırları"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__number
+msgid "Donation Number"
+msgstr "Bağış numarası"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donation_tax_receipt_menu
+msgid "Donation Tax Receipts"
+msgstr "Bağış makbuzları"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_thanks_template
+msgid "Donation Thanks Letter Template"
+msgstr "Bağış teşekkür mektubu şablonu"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_company__donation_account_id
+#: model:ir.model.fields,field_description:donation.field_res_config_settings__donation_account_id
+msgid "Donation by Credit Transfer Account"
+msgstr "Havale bağışları hesabı"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_payment_method_line.py:0
+msgid "Donation payment method '%s' is not an inbound payment method."
+msgstr "'%s' bağış ödeme yöntemi bir gelen ödeme yöntemi değil."
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_action
+#: model:ir.actions.act_window,name:donation.partner_donation_action
+#: model:ir.model.fields,field_description:donation.field_account_bank_statement_line__donation_ids
+#: model:ir.model.fields,field_description:donation.field_res_partner__donation_ids
+#: model:ir.model.fields,field_description:donation.field_res_users__donation_ids
+#: model:ir.ui.menu,name:donation.donation_config_donation_menu
+#: model:ir.ui.menu,name:donation.donation_menu
+#: model:ir.ui.menu,name:donation.donation_title_menu
+#: model:res.groups.privilege,name:donation.privilege_donation
+#: model_terms:ir.ui.view,arch_db:donation.view_partner_property_form
+msgid "Donations"
+msgstr "Bağışlar"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_report_action
+#: model:ir.model,name:donation.model_donation_report
+#: model:ir.ui.menu,name:donation.donation_report_menu
+msgid "Donations Analysis"
+msgstr "Bağış analizi"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_line_action
+msgid "Donations Lines"
+msgstr "Bağış satırları"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__state__done
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Done"
+msgstr "Tamamlandı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__partner_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__partner_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Donor"
+msgstr "Bağışçı"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donor
+msgid "Donors"
+msgstr "Bağışçılar"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__state__draft
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Draft"
+msgstr "Taslak"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__tax_receipt_total
+msgid "Eligible Tax Receipt Sub-total in Company Currency"
+msgstr "Firma para biriminde makbuza uygun ara toplam"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_report__tax_receipt_ok
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Eligible for a Tax Receipt"
+msgstr "Bağış makbuzuna uygun"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Error:"
+msgstr "Hata:"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Failed to get account for donation line with product '%s'."
+msgstr "'%s' ürünlü bağış satırı için hesap bulunamadı."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_follower_ids
+msgid "Followers"
+msgstr "Takipçiler"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Takipçiler (Kişiler)"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font Awesome simgesi, ör. fa-tasks"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__tax_receipt_option__each
+#: model:ir.model.fields.selection,name:donation.selection__donation_tax_receipt_option_switch__new_tax_receipt_option__each
+msgid "For Each Donation"
+msgstr "Her bağış için ayrı makbuz"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Full in-kind donation: no journal entry generated."
+msgstr "Tamamen ayni bağış: yevmiye kaydı oluşturulmadı."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__has_message
+msgid "Has Message"
+msgstr "Mesajı var"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_account_analytic_applicability__id
+#: model:ir.model.fields,field_description:donation.field_account_bank_statement_line__id
+#: model:ir.model.fields,field_description:donation.field_account_payment_method_line__id
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__id
+#: model:ir.model.fields,field_description:donation.field_donation_donation__id
+#: model:ir.model.fields,field_description:donation.field_donation_line__id
+#: model:ir.model.fields,field_description:donation.field_donation_report__id
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt__id
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__id
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__id
+#: model:ir.model.fields,field_description:donation.field_donation_validate__id
+#: model:ir.model.fields,field_description:donation.field_res_company__id
+#: model:ir.model.fields,field_description:donation.field_res_config_settings__id
+#: model:ir.model.fields,field_description:donation.field_res_partner__id
+#: model:ir.model.fields,field_description:donation.field_res_users__id
+msgid "ID"
+msgstr "ID"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_exception_icon
+msgid "Icon"
+msgstr "Simge"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "İstisnai bir aktiviteyi gösteren simge."
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "İşaretliyse, yeni mesajlar dikkatinize sunulacak."
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__message_has_error
+#: model:ir.model.fields,help:donation.field_donation_donation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "İşaretliyse bazı mesajlarda iletim hatası var."
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_account_payment_method_line__donation
+msgid "If enabled, this payment method will be available on donations"
+msgstr "Etkinse bu ödeme yöntemi bağışlarda kullanılabilir"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__image
+msgid "Image"
+msgstr "Görsel"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__in_kind
+#: model:ir.model.fields,field_description:donation.field_donation_report__in_kind
+msgid "In Kind"
+msgstr "Ayni bağış"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "In kind"
+msgstr "Ayni bağış"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__tax_receipt_ok
+msgid "Is Eligible for a Tax Receipt"
+msgstr "Bağış makbuzuna uygun mu"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_is_follower
+msgid "Is Follower"
+msgstr "Takipçi mi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__move_id
+msgid "Journal Entry"
+msgstr "Yevmiye kaydı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__write_uid
+#: model:ir.model.fields,field_description:donation.field_donation_donation__write_uid
+#: model:ir.model.fields,field_description:donation.field_donation_line__write_uid
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__write_uid
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__write_uid
+#: model:ir.model.fields,field_description:donation.field_donation_validate__write_uid
+msgid "Last Updated by"
+msgstr "Son güncelleyen"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__write_date
+#: model:ir.model.fields,field_description:donation.field_donation_donation__write_date
+#: model:ir.model.fields,field_description:donation.field_donation_line__write_date
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__write_date
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__write_date
+#: model:ir.model.fields,field_description:donation.field_donation_validate__write_date
+msgid "Last Updated on"
+msgstr "Son güncelleme"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_from_bank_statement_line_form
+msgid "Lines"
+msgstr "Satırlar"
+
+#. module: donation
+#: model:ir.module.category,description:donation.module_category_donation
+msgid "Manage donations"
+msgstr "Bağış yönetimi"
+
+#. module: donation
+#: model:res.groups,name:donation.group_donation_manager
+msgid "Manager"
+msgstr "Yönetici"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_tree
+msgid "Mark all selected donation as Thanks Printed?"
+msgstr ""
+"Seçilen tüm bağışlar \"Teşekkür mektubu yazdırıldı\" olarak işaretlensin mi?"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_tree
+msgid "Mark as Thanks Printed"
+msgstr "Teşekkür mektubu yazdırıldı olarak işaretle"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_has_error
+msgid "Message Delivery error"
+msgstr "Mesaj iletim hatası"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_ids
+msgid "Messages"
+msgstr "Mesajlar"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid "Missing Product for Donations via Credit Transfert for company '%s'."
+msgstr "'%s' firmasında havale bağışları ürünü eksik."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid "Missing inbound payment method linked to the bank journal '%s'."
+msgstr "'%s' banka yevmiyesine bağlı gelen ödeme yöntemi eksik."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Aktivite son tarihim"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__name
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__name
+msgid "Name"
+msgstr "Ad"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_campaign_search
+msgid "Name or Code"
+msgstr "Ad veya kod"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "New"
+msgstr "Yeni"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sonraki aktivitenin takvim etkinliği"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Sonraki aktivitenin son tarihi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_summary
+msgid "Next Activity Summary"
+msgstr "Sonraki aktivitenin özeti"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_type_id
+msgid "Next Activity Type"
+msgstr "Sonraki aktivitenin türü"
+
+#. module: donation
+#: model:ir.model.fields.selection,name:donation.selection__donation_donation__tax_receipt_option__none
+msgid "None"
+msgstr "Hiçbiri"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__note
+msgid "Notes"
+msgstr "Notlar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Eylem sayısı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_has_error_counter
+msgid "Number of errors"
+msgstr "Hata sayısı"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Eylem gerektiren mesaj sayısı"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "İletim hatalı mesaj sayısı"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid ""
+"On bank statement line '%(line)s', the amount (%(amount)s) is negative so it"
+" cannot be processed as a donation."
+msgstr ""
+"'%(line)s' banka hesap özeti satırında tutar (%(amount)s) negatif, bu yüzden"
+" bağış olarak işlenemez."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid ""
+"On bank statement line '%s', the partner is required to process a donation."
+msgstr ""
+"'%s' banka hesap özeti satırını bağış olarak işlemek için kişi gerekli."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/res_company.py:0
+msgid ""
+"On the company %(company)s, the Product for Donations via Credit Transfer "
+"(%(product)s) is not a donation product !"
+msgstr ""
+"%(company)s firmasında havale bağışları ürünü (%(product)s) bir bağış ürünü "
+"değil!"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Other Information"
+msgstr "Diğer bilgiler"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__commercial_partner_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Parent Donor"
+msgstr "Üst bağışçı"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Partner"
+msgstr "Bağışçı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_report__country_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Partner Country"
+msgstr "Kişinin ülkesi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__payment_method_line_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Payment Method"
+msgstr "Ödeme yöntemi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_report__payment_method_line_id
+msgid "Payment Method Line"
+msgstr "Ödeme yöntemi satırı"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.account_payment_method_line_donation_action
+#: model:ir.model,name:donation.model_account_payment_method_line
+#: model:ir.ui.menu,name:donation.account_payment_method_line_donation_menu
+msgid "Payment Methods"
+msgstr "Ödeme yöntemleri"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__payment_ref
+msgid "Payment Reference"
+msgstr "Ödeme referansı"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "Payment account is not set on payment method '%s'."
+msgstr "'%s' ödeme yönteminde ödeme hesabı ayarlanmamış."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"Payment method is not set on donation %s (only fully in-kind donations don't"
+" require a payment method)."
+msgstr ""
+"%s bağışında ödeme yöntemi ayarlanmamış (yalnızca tamamen ayni bağışlar "
+"ödeme yöntemi gerektirmez)."
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donation_tax_receipt_print_menu
+msgid "Print Receipts"
+msgstr "Makbuzları yazdır"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Print Thanks Letter"
+msgstr "Teşekkür mektubunu yazdır"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__product_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__product_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Product"
+msgstr "Ürün"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Product Category"
+msgstr "Ürün kategorisi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__product_donation_type
+#: model_terms:ir.ui.view,arch_db:donation.donation_report_search
+msgid "Product Type donation"
+msgstr "Bağış ürün türü"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_res_company__donation_credit_transfer_product_id
+#: model:ir.model.fields,field_description:donation.field_res_config_settings__donation_credit_transfer_product_id
+msgid "Product for Donations via Credit Transfer"
+msgstr "Havale bağışları ürünü"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_product_action
+#: model:ir.ui.menu,name:donation.donation_products
+msgid "Products"
+msgstr "Ürünler"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__quantity
+msgid "Quantity"
+msgstr "Miktar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt__donation_ids
+#: model_terms:ir.ui.view,arch_db:donation.donation_tax_receipt_form
+msgid "Related Donations"
+msgstr "İlgili bağışlar"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donation_report_title_menu
+msgid "Reporting"
+msgstr "Raporlama"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__activity_user_id
+msgid "Responsible User"
+msgstr "Sorumlu kullanıcı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS iletim hatası"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+msgid "Save Default Values"
+msgstr "Varsayılan değerleri kaydet"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_from_bank_statement_line_form
+msgid "Save as Draft"
+msgstr "Taslak olarak kaydet"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__sequence
+#: model:ir.model.fields,field_description:donation.field_donation_line__sequence
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__sequence
+msgid "Sequence"
+msgstr "Sıra"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_settings_action
+#: model:ir.ui.menu,name:donation.donation_settings_menu
+msgid "Settings"
+msgstr "Ayarlar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__bank_statement_line_id
+msgid "Source Bank Statement Line"
+msgstr "Kaynak banka hesap özeti satırı"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_line__tax_receipt_ok
+msgid "Specify if the product is eligible for a tax receipt"
+msgstr "Ürünün bağış makbuzuna uygun olup olmadığını belirtin"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_campaign__start_date
+msgid "Start Date"
+msgstr "Başlangıç tarihi"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__state
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "State"
+msgstr "Durum"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Aktivitelere göre durum\n"
+"Gecikmiş: Son tarih geçti\n"
+"Bugün: Aktivite tarihi bugün\n"
+"Planlandı: Gelecekteki aktiviteler."
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_tax_receipt_option_switch
+msgid "Switch Donation Tax Receipt Option"
+msgstr "Bağış makbuzu seçeneğini değiştir"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__tax_receipt_id
+#: model_terms:ir.ui.view,arch_db:donation.donation_line_tree
+msgid "Tax Receipt"
+msgstr "Bağış makbuzu"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__tax_receipt_total
+#: model:ir.model.fields,field_description:donation.field_donation_line__tax_receipt_amount
+#: model:ir.model.fields,field_description:donation.field_donation_report__tax_receipt_amount
+msgid "Tax Receipt Eligible Amount"
+msgstr "Makbuza uygun tutar"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__tax_receipt_option
+#: model:ir.model.fields,field_description:donation.field_donation_tax_receipt_option_switch__new_tax_receipt_option
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Tax Receipt Option"
+msgstr "Makbuz seçeneği"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_tax_receipt
+msgid "Tax Receipt for Donations"
+msgstr "Bağışlar için makbuz"
+
+#. module: donation
+#: model:ir.ui.menu,name:donation.donation_tax_title_menu
+msgid "Tax Receipts"
+msgstr "Bağış makbuzları"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_thanks_template__text
+msgid "Text"
+msgstr "Metin"
+
+#. module: donation
+#: model:ir.actions.report,name:donation.report_thanks
+msgid "Thanks Letter"
+msgstr "Teşekkür mektubu"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_thanks_template_action
+#: model:ir.ui.menu,name:donation.donation_thanks_template_menu
+msgid "Thanks Letter Templates"
+msgstr "Teşekkür mektubu şablonları"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__thanks_printed
+#: model:ir.model.fields,field_description:donation.field_donation_report__thanks_printed
+msgid "Thanks Printed"
+msgstr "Teşekkür mektubu yazdırıldı"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__thanks_template_id
+#: model:ir.model.fields,field_description:donation.field_donation_report__thanks_template_id
+msgid "Thanks Template"
+msgstr "Teşekkür şablonu"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_search
+msgid "Thanks to Print"
+msgstr "Yazdırılacak teşekkür mektupları"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"The Donation by Credit Transfer Account '%(account)s' for company "
+"'%(company)s' is not reconciliable. This should never happen."
+msgstr ""
+"'%(company)s' firmasındaki '%(account)s' havale bağışları hesabı mutabakata "
+"uygun değil. Bu hiç olmamalı."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/account_bank_statement_line.py:0
+msgid "The Donation by Credit Transfer Accountis not set for company '%s'."
+msgstr "'%s' firmasında havale bağışları hesabı ayarlanmamış."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"The amount of donation %(donation)s (%(check_total)s) is different from the "
+"sum of the donation lines (%(amount_total)s)."
+msgstr ""
+"%(donation)s bağışının tutarı (%(check_total)s) bağış satırlarının "
+"toplamından (%(amount_total)s) farklı."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"The date of donation %s should be today or in the past, not in the future!"
+msgstr "%s bağışının tarihi bugün veya geçmişte olmalı, gelecekte olamaz!"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"The payment method '%(pay_mode)s' selected on donation %(donation)s is not a"
+" donation payment method."
+msgstr ""
+"%(donation)s bağışında seçilen '%(pay_mode)s' ödeme yöntemi bir bağış ödeme "
+"yöntemi değil."
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__thanks_printed
+msgid ""
+"This field automatically becomes active when the thanks letter has been "
+"printed."
+msgstr "Teşekkür mektubu yazdırıldığında bu alan otomatik olarak etkinleşir."
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_validate_form
+msgid "This wizard will validate all the draft donations selected."
+msgstr "Bu sihirbaz seçilen tüm taslak bağışları onaylar."
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_from_bank_statement_line_form
+msgid "Total"
+msgstr "Toplam"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_res_company__donation_account_id
+#: model:ir.model.fields,help:donation.field_res_config_settings__donation_account_id
+msgid "Transfer account for donations received by credit transfer. "
+msgstr "Havale ile gelen bağışlar için geçiş hesabı. "
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Kayıttaki istisna aktivitesinin türü."
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_line__unit_price
+msgid "Unit Price"
+msgstr "Birim fiyat"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_tax_receipt_option_switch_form
+msgid "Update"
+msgstr "Güncelle"
+
+#. module: donation
+#: model:ir.model,name:donation.model_res_users
+#: model:res.groups,name:donation.group_donation_user
+msgid "User"
+msgstr "Kullanıcı"
+
+#. module: donation
+#: model_terms:ir.ui.view,arch_db:donation.donation_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_from_bank_statement_line_form
+#: model_terms:ir.ui.view,arch_db:donation.donation_tree
+#: model_terms:ir.ui.view,arch_db:donation.donation_validate_form
+msgid "Validate"
+msgstr "Onayla"
+
+#. module: donation
+#: model:ir.model,name:donation.model_donation_validate
+#: model_terms:ir.ui.view,arch_db:donation.donation_validate_form
+msgid "Validate Donations"
+msgstr "Bağışları onayla"
+
+#. module: donation
+#: model:ir.actions.act_window,name:donation.donation_validate_action
+msgid "Validate Draft Donations"
+msgstr "Taslak bağışları onayla"
+
+#. module: donation
+#: model:res.groups,name:donation.group_donation_viewer
+msgid "Viewer"
+msgstr "Görüntüleyici"
+
+#. module: donation
+#: model:ir.model.fields,field_description:donation.field_donation_donation__website_message_ids
+msgid "Website Messages"
+msgstr "Web sitesi mesajları"
+
+#. module: donation
+#: model:ir.model.fields,help:donation.field_donation_donation__website_message_ids
+msgid "Website communication history"
+msgstr "Web sitesi iletişim geçmişi"
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid ""
+"You cannot cancel this donation because it is linked to the tax receipt %s. "
+"You should first delete this tax receipt (but it may not be legally "
+"allowed)."
+msgstr ""
+"Bu bağış %s bağış makbuzuna bağlı olduğu için iptal edilemez. Önce bu "
+"makbuzu silmeniz gerekir (ancak bu yasal olarak izinli olmayabilir)."
+
+#. module: donation
+#. odoo-python
+#: code:addons/donation/models/donation.py:0
+msgid "You cannot change the Tax Receipt Option when it is Annual."
+msgstr "Makbuz seçeneği yıllık olduğunda değiştirilemez."
